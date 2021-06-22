@@ -6,13 +6,7 @@
 >### **由观测数据集,得到新样本的均值和方差**
 ![avatar](https://github.com/ShuoLiu-Max/Bayesian-optimization/blob/main/images/sampled.png)
 
-**目标函数**
->$$objective = 0.001775\times x^5 - 0.055\times x^4 + 0.582\times x^3 - 2.405 \times x^2 + 3.152 \times x + 4.678 + random.normal(0, std_n)$$
-$$Y=object(X)$$
-对于未知样本，
-$$Xs=np.arange(0,10,0.1)^T$$
-
-协方差函数：\
+**协方差函数：**
 <font size=4>$$k(r\_2,l)=exp(\frac{-r\_2}{2l^2})$$</font>
 
 
