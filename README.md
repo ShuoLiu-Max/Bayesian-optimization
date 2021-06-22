@@ -8,13 +8,9 @@
 
 **目标函数**
 >$$objective = 0.001775\times x^5 - 0.055\times x^4 + 0.582\times x^3 - 2.405 \times x^2 + 3.152 \times x + 4.678 + random.normal(0, std_n)$$
-观测的数据：
-$$X=\begin{bmatrix} {1.5}\\{4.5}\\{7.5} \end{bmatrix},Y=\begin{bmatrix} {5.69404141}\\ {3.91743672}\\{6.66614453}\end{bmatrix}$$
-其中，
 $$Y=object(X)$$
 对于未知样本，
 $$Xs=np.arange(0,10,0.1)^T$$
-$$t=\begin{bmatrix}\begin{bmatrix}1.5\\1.5\\1.5\end{bmatrix}\\\begin{bmatrix}4.5\\4.5\\4.5\end{bmatrix}\\\begin{bmatrix}7.5\\7.5\\7.5\end{bmatrix}\end{bmatrix}-\begin{bmatrix}1.5\\4.5\\7.5\end{bmatrix}$$
 
 协方差函数：\
 <font size=4>$$k(r\_2,l)=exp(\frac{-r\_2}{2l^2})$$</font>
