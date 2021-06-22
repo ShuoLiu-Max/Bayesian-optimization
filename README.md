@@ -2,6 +2,7 @@
 >### <font color=red>**一、高斯过程**</font>
 
 <font size=4>$SE协方差函数=exp(\frac{-(x_1-x_2)^2}{2l^2})$</font>
+
 <img src="https://github.com/ShuoLiu-Max/Bayesian-optimization/blob/main/images/gp_sample.png" width = "200" height = "300" alt="" align=center />
 ![avatar](https://github.com/ShuoLiu-Max/Bayesian-optimization/blob/main/images/gp_sample.png)
 ****
