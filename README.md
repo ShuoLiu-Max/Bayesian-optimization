@@ -19,7 +19,7 @@ $$X\sim N(\mu_x,A)$$
 
 则对于已知观测数据$D=\{(X_i,F_i)|i=1,2,...,n\}$,
 其中$F_i=f(X_i)$,对于新采样的数据$x_*$,则
-$$f_{*}=f(x_{*})$$
+$$f_\*=f(x_\*)$$
 $$\begin{bmatrix}F\\f_*\end{bmatrix}\sim N(m_0I,\begin{bmatrix}K & k_*\\k^T_* & k(x_*,x_*)\end{bmatrix})$$
 那么：
 $$f_*|x_*,D\sim N(\mu(x_*),\sigma^2(x_*))$$
