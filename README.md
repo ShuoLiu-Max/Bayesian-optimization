@@ -22,7 +22,7 @@ $$X\sim N(\mu_x,A)$$
 $$f_\*=f(x_\*)$$
 $$\begin{bmatrix}F\\f_\*\end{bmatrix}\sim N(m_0I,\begin{bmatrix}K & k_\*\\k^T_\* & k(x_\*,x_\*)\end{bmatrix})$$
 那么：
-$$f_*|x_*,D\sim N(\mu(x_*),\sigma^2(x_*))$$
+$$f_\*|x_\*,D\sim N(\mu(x_\*),\sigma^2(x_\*))$$
 其中，
 >$$\mu(x_*)=m_0+k^T_*K^{-1}(F-m_0I)$$
 >$$\sigma^2(x_*)=k(x_*,x_*)-k^T_*K^{-1}k_*$$
