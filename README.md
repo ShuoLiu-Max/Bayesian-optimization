@@ -30,7 +30,7 @@ $$\sigma^2(x_\*)=k(x_\*,x_\*)-k^T_\*K^{-1}k_\*$$
 >### <font color=red>**二、贝叶斯优化</font>**
 ><font color=yellow size=2>***1、选取采样函数***</font>\
 **GP-UCB**\
-$$GP-UCB(x_*)=\mu(x_*)+(1 \times 2\times(\frac{ log(|D|\times t^2 \times \pi^2)}{6\times \delta}))^{0.5}\times \sigma(x_*),\space\space\space\space\space\space\delta\in(0,1)$$
+$$GP-UCB(x_\*)=\mu(x_\*)+(1 \times 2\times(\frac{ log(|D|\times t^2 \times \pi^2)}{6\times \delta}))^{0.5}\times \sigma(x_\*),\space\space\space\space\space\space\delta\in(0,1)$$
 其中，$|D|$表示对$x$的定义域$D$进行离散化取值得到的点的数量。比如对于1维的情况， $D=[0,1]\subset R$，每隔 0.01 取一个$x$值，则$|D|=100$。$t$为迭代次数，即采样进度。
 
 ><font color=yellow size=2>***2、根据高斯过程，求每个点的对应的均值和方差***</font>\
