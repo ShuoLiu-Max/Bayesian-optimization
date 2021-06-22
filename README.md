@@ -15,7 +15,7 @@ $$cov(y_i,y_i)=\begin{cases} \sigma^2_fk(x_i,x_i)+\sigma^2_{noise},&if  i=j \\\ 
 $$\begin{bmatrix}X\\\Y\end{bmatrix}\sim N(\begin{bmatrix}\mu_x \\\ \mu_y\end{bmatrix},\begin{bmatrix}A & C\\\C^T & B\end{bmatrix})$$
 则有：
 $$X\sim N(\mu_x,A)$$
->$$Y|X\sim N(\mu_x+C^TA^{-1}(X-\mu_y)(X-\mu_x), B-C^TA^{-1}C)$$
+$$Y|X\sim N(\mu_x+C^TA^{-1}(X-\mu_y)(X-\mu_x), B-C^TA^{-1}C)$$
 
 则对于已知观测数据$D=\{(X_i,F_i)|i=1,2,...,n\}$,
 其中$F_i=f(X_i)$,对于新采样的数据$x_*$,则
@@ -24,8 +24,8 @@ $$\begin{bmatrix}F\\\f_\*\end{bmatrix}\sim N(m_0I,\begin{bmatrix}K & k_\*\\\k^T_
 那么：
 $$f_\*|x_\*,D\sim N(\mu(x_\*),\sigma^2(x_\*))$$
 其中，
->$$\mu(x_\*)=m_0+k^T_\*K^{-1}(F-m_0I)$$
->$$\sigma^2(x_\*)=k(x_\*,x_\*)-k^T_\*K^{-1}k_\*$$
+$$\mu(x_\*)=m_0+k^T_\*K^{-1}(F-m_0I)$$
+$$\sigma^2(x_\*)=k(x_\*,x_\*)-k^T_\*K^{-1}k_\*$$
 ****
 >### <font color=red>**二、贝叶斯优化</font>**
 ><font color=yellow size=2>***1、选取采样函数***</font>\
