@@ -9,16 +9,17 @@
 **协方差函数：**
 <font size=4>$$k(r\_2,l)=exp(\frac{-r\_2}{2l^2})$$</font>
 
-$cov(y_i,y_i)=\begin{cases} \sigma^2_fk(x_i,x_i)+\sigma^2_{noise},&if  i=j \\\ \sigma^2_fk(x_i,x_j),&otherwise\end{cases}$
+$$cov(y_i,y_i)=\begin{cases} \sigma^2_fk(x_i,x_i)+\sigma^2_{noise},&if  i=j \\\ \sigma^2_fk(x_i,x_j),&otherwise\end{cases}$$
 
 已知：
 $$\begin{bmatrix}X\\\Y\end{bmatrix}\sim N(\begin{bmatrix}\mu_x \\\ \mu_y\end{bmatrix},\begin{bmatrix}A & C\\\C^T & B\end{bmatrix})$$
 则有：
 $$X\sim N(\mu_x,A)$$
 >$$Y|X\sim N(\mu_x+C^TA^{-1}(X-\mu_y)(X-\mu_x), B-C^TA^{-1}C)$$
+
 则对于已知观测数据$D=\{(X_i,F_i)|i=1,2,...,n\}$,
 其中$F_i=f(X_i)$,对于新采样的数据$x_*$,则
-$$f_*=f(x_*)$$
+$$f_{*}=f(x_{*})$$
 $$\begin{bmatrix}F\\f_*\end{bmatrix}\sim N(m_0I,\begin{bmatrix}K & k_*\\k^T_* & k(x_*,x_*)\end{bmatrix})$$
 那么：
 $$f_*|x_*,D\sim N(\mu(x_*),\sigma^2(x_*))$$
