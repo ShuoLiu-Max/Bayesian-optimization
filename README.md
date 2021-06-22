@@ -3,10 +3,10 @@
 
 <font size=4>$SE协方差函数=exp(\frac{-(x_1-x_2)^2}{2l^2})$</font>
 
-![avatar](images\多元高斯分布采样.png)
+![avatar](images\gp_sample.png)
 ****
 >### **由观测数据集,得到新样本的均值和方差**
-![avatar](images\观测数据后的数据分布.png)
+![avatar](images\sampled.png)
 
 **目标函数**
 >$$objective = 0.001775\times x^5 - 0.055\times x^4 + 0.582\times x^3 - 2.405 \times x^2 + 3.152 \times x + 4.678 + random.normal(0, std_n)$$
@@ -52,4 +52,4 @@ $$GP-UCB(x_*)=\mu(x_*)+(1 \times 2\times(\frac{ log(|D|\times t^2 \times \pi^2)}
 带入到采样函数中，获得一个采样点。将该采样点加入到观测到的样本中，继续下一次采样。
 
 所得结果如下图所示：\
-![avatar](images\贝叶斯优化.png)
+![avatar](images\byes.png)
