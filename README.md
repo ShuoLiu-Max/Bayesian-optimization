@@ -9,8 +9,7 @@
 **协方差函数：**
 <font size=4>$$k(r\_2,l)=exp(\frac{-r\_2}{2l^2})$$</font>
 
-
-$cov(y_i,y_i)=\begin{cases} \sigma^2_fk(x_i,x_i)+\sigma^2_{noise},&if i=j \\ \sigma^2_fk(x_i,x_j),&otherwise\end{cases}$
+$cov(y_i,y_i)=\begin{cases} \sigma^2_fk(x_i,x_i)+\sigma^2_{noise},&if i=j \\\ \sigma^2_fk(x_i,x_j),&otherwise\end{cases}$
 
 已知：
 $$\begin{bmatrix}X\\\Y\end{bmatrix}\sim N(\begin{bmatrix}\mu_x\\\mu_y\end{bmatrix},\begin{bmatrix}A & C\\\C^T & B\end{bmatrix})$$
