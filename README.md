@@ -52,4 +52,4 @@ $$GP-UCB(x_*)=\mu(x_*)+(1 \times 2\times(\frac{ log(|D|\times t^2 \times \pi^2)}
 带入到采样函数中，获得一个采样点。将该采样点加入到观测到的样本中，继续下一次采样。
 
 所得结果如下图所示：\
-![avatar](images\byes.png)
+![avatar](https://github.com/ShuoLiu-Max/Bayesian-optimization/blob/main/images/byes.png)
