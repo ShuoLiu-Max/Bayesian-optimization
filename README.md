@@ -12,7 +12,7 @@
 $cov(y_i,y_i)=\begin{cases} \sigma^2_fk(x_i,x_i)+\sigma^2_{noise},&if  i=j \\\ \sigma^2_fk(x_i,x_j),&otherwise\end{cases}$
 
 已知：
-$$\begin{bmatrix}X\\\Y\end{bmatrix}\sim N(\begin{bmatrix}\mu_x\\\mu_y\end{bmatrix},\begin{bmatrix}A & C\\\C^T & B\end{bmatrix})$$
+$$\begin{bmatrix}X\\\Y\end{bmatrix}\sim N(\begin{bmatrix}\mu_x \\\ \mu_y\end{bmatrix},\begin{bmatrix}A & C\\\C^T & B\end{bmatrix})$$
 则有：
 $$X\sim N(\mu_x,A)$$
 >$$Y|X\sim N(\mu_x+C^TA^{-1}(X-\mu_y)(X-\mu_x), B-C^TA^{-1}C)$$
