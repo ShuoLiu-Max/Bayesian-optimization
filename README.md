@@ -41,3 +41,13 @@ $$GP-UCB(x_\*)=\mu(x_\*)+(1 \times 2\times(\frac{ log(|D|\times t^2 \times \pi^2
 
 所得结果如下图所示：\
 ![avatar](https://github.com/ShuoLiu-Max/Bayesian-optimization/blob/main/images/byes.png)
+
+><font color=green size=4>**<待续ing......>**</font>
+
+## 四、<font color=red >贝叶斯优化神经网络超参数的实例——基于Pytorch</font>
+<font color=yellow>***CrossEntropyLoss***</font>
+
+$$loss(x, class) = -log\left(\frac{exp(x[class])}{\sum_j exp(x[j])}\right)
+                 = -x[class] + log\left(\sum_j exp(x[j])\right)$$
+<font color=yellow>代码主结构结构：</font>\
+![](images\byes_opi.png)
