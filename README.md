@@ -50,4 +50,4 @@ $$GP-UCB(x_\*)=\mu(x_\*)+(1 \times 2\times(\frac{ log(|D|\times t^2 \times \pi^2
 $$loss(x, class) = -log\left(\frac{exp(x[class])}{\sum_j exp(x[j])}\right)
                  = -x[class] + log\left(\sum_j exp(x[j])\right)$$
 <font color=yellow>代码主结构结构：</font>\
-![](images\byes_opi.png)
+![](https://github.com/ShuoLiu-Max/Bayesian-optimization/blob/main/images/byes_opi.png)
